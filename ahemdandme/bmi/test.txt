@@ -1,0 +1,279 @@
+
+import 'FUNCTION.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
+
+
+class Test extends StatefulWidget {
+  State<StatefulWidget> createState() {
+    return TestState();
+  }
+}
+
+class TestState extends State<Test> {
+  bool isMan = true;
+  bool change = true;
+  double  sliderValue = 130;
+  int weight = 50;
+  int age = 30;
+  double result = 0;
+  Countt count = Countt();
+  Countt colorchange =Countt();
+  String upu = ' the result';
+
+
+  Widget build(BuildContext context) {
+    return Scaffold(
+
+      backgroundColor: Colors.black87,
+      appBar: AppBar(
+        title: const Center(child: Text("welcome ", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),)),
+        backgroundColor: Colors.blueAccent,
+      ),
+      body: Column(
+
+        children: [
+          Expanded(
+
+            child: Row(children: [
+              Expanded(
+                child: GestureDetector(
+                  onTap: () {
+                    setState(() {
+                      isMan = true;
+                    });
+                  },
+                  child: Container(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: const [
+                        Icon(
+                          Icons.male,
+                          size: 22.2,
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Text("male",style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),),
+                      ],
+                    ),
+                    margin: const EdgeInsets.all(10.0),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10.0),
+                      color: isMan ? Colors.white38: Colors.green,
+                    ),
+                  ),
+                ),
+              ),
+              Expanded(
+
+                child: GestureDetector(
+                  onTap: () {
+                    setState(() {
+                      isMan = false;
+                    });
+                  },
+                  child: Container(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: const[
+                        Icon(Icons.female),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Text("Female",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
+                      ],
+                    ),
+                    margin: const EdgeInsets.all(10.0),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10.0),
+                      color: !isMan ? Colors.white60 : Colors.white60,
+                    ),
+                  ),
+                ),
+              ),
+            ]),
+          ),
+
+          Expanded(
+            child: Container(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text("the tall",style: TextStyle(color: Colors.white70),),
+                  Text(
+                    sliderValue.toStringAsFixed(1),
+                    style: const TextStyle(color: Colors.pinkAccent, fontSize: 22.2),
+                  ),
+                  SizedBox(
+                    child: Slider(
+                      inactiveColor: Colors.white,
+                      thumbColor: Colors.red,
+
+
+                      value: sliderValue ,
+                      max: 200.0,
+                      min: 90.0,
+                      onChanged: (value) {
+                        setState(() {
+                          sliderValue = value ;
+                        });
+                      },
+                    ),
+                    width: double.infinity,
+                  ),
+                ],
+              ),
+              margin: const EdgeInsets.all(10.0),
+              decoration: BoxDecoration(
+                  color: Colors.green,
+                  borderRadius: BorderRadius.circular(10.0)),
+            ),
+          ),
+
+          Expanded(
+            child: Row(children: [
+              Expanded(
+                child: Container(
+                  child: Column(
+
+
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      const Text("weight",style: TextStyle(color: Colors.red,fontWeight: FontWeight.bold),),
+                      Text("$weight",style: TextStyle(color: Colors.red,fontWeight: FontWeight.bold),),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          GestureDetector(
+                            onTap: () {
+                              setState(() {
+                                weight++;
+                                print(weight);
+                              });
+                            },
+                            child: const CircleAvatar(
+                              backgroundColor: Colors.white,
+                              radius: 20.0,
+                              child: Icon(
+                                Icons.add,
+                                color: Colors.brown,
+                              ),
+                            ),
+                          ),
+                          GestureDetector(
+                            onTap: () {
+                              setState(() {
+                                weight--;
+                              });
+                            },
+                            child: const CircleAvatar(
+                              backgroundColor: Colors.white,
+                              radius: 20.0,
+                              child: const Icon(
+                                Icons.exposure_minus_1_outlined,
+                                color: Colors.black,
+                              ),
+                            ),
+                          )
+                        ],
+                      )
+                    ],
+                  ),
+                  margin: const EdgeInsets.all(10.0),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10.0),
+                    color: Colors.lightGreenAccent,
+                  ),
+                ),
+              ),
+              Expanded(
+                child: Container(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      const Text("the age",style: const TextStyle(color: Colors.red),),
+                      Text("$age",style: const TextStyle(color: Colors.red,fontWeight: FontWeight.bold),),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          GestureDetector(
+                            onTap: () {
+                              setState(() {
+                                age++;
+                              });
+                            },
+                            child: const CircleAvatar(
+                              backgroundColor: Colors.white,
+                              child: Icon(Icons.add),
+                              radius: 20.0,
+                            ),
+                          ),
+                          GestureDetector(
+                            onTap: () {
+                              setState(() {
+                                age --;
+                              });
+                            },
+                            child: const CircleAvatar(
+                              backgroundColor: Colors.white,
+                              child: const Icon(Icons.exposure_minus_1_outlined),
+                              radius: 20.0,
+                            ),
+                          ),
+                        ],
+                      )
+                    ],
+                  ),
+                  margin: const EdgeInsets.all(10.0),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10.0),
+                    color: Colors.lightGreenAccent,
+                  ),
+                ),
+              ),
+            ]),
+          ),
+          ///////////
+
+          GestureDetector(
+            onTap: (){
+
+
+              setState(() {
+
+                result = count.calculateBMI(sliderValue, weight);
+                upu = count.daata();
+
+
+              });
+
+            },
+
+            child: Container(
+              height: 60.0,
+              width: double.infinity,
+              margin: const EdgeInsets.all(10.0),
+              color: change  ? Colors.red : Colors.black,
+              child: Center(
+                child: Text("press to caculate",
+                  style: const TextStyle(fontSize: 22.3),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+            ),
+          ),
+          Container(
+            color: Colors.blueAccent,
+            height: 60.0,
+            width: double.infinity,
+            child: Center(child: Text("${upu}",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),)),
+          )
+
+        ],
+      ),
+    );
+  }
+}
+

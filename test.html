@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="te">
+    nu1:<input type="text" name="n11" value="">
+    </form>
+
+    <button onclick="test()">press</button>
+</body>
+<script>
+    number1= document.te.n11;
+
+    function test(){
+        var nm1= parseInt(number1);
+        if(nm1 >20 && nm1<40){
+            alert("hello");
+
+        }
+        else{
+            alert("nio");
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,55 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/widgets.dart';
+import 'package:flutter/material.dart';
+
+class Test extends StatefulWidget {
+  State<StatefulWidget> createState() {
+    return TestState();
+  }
+}
+
+class TestState extends State<Test> {
+  String count = "";
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(),
+      drawer: Drawer(),
+      body: Center(
+
+        child: Container(
+          color: Colors.black87,
+
+          width: 300.0,
+          height: 300.0,
+          child: ListView.builder(itemCount: 10,itemBuilder: (context,i){
+            return Container(
+
+            color: Colors.lightGreen,
+              child: Row(
+                children: [
+                  Text("chapters:$i"),
+                  Icon(Icons.mark_chat_read_rounded),
+                  Container(
+                    decoration:BoxDecoration(
+                      border: Border.all(color: Colors.black87,width: 3.3)
+                    ),
+                    child: RaisedButton(onPressed:(){},
+
+
+                      color: Colors.redAccent,
+                      child: Text("enter here",style: TextStyle(color: Colors.black,),),
+                    ),
+                  ),
+
+                ],
+              ),
+              //we  can addd anything we  want
+            );
+          },),
+        ),
+      ),
+    );
+  }
+}

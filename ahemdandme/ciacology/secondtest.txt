@@ -1,0 +1,2182 @@
+import 'package:flutter/material.dart';
+
+class forthtest extends StatefulWidget {
+  const forthtest({Key? key}) : super(key: key);
+
+  @override
+  State<forthtest> createState() => _forthtestState();
+}
+
+class _forthtestState extends State<forthtest> {
+  var v1;
+  var v2;
+  var v3;
+  var v4;
+  var v5;
+  var v6;
+  var v7;
+  var v8;
+  var v9;
+  var v10;
+  var result;
+  String name = "اضغط هنا";
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("اختبار القطبية"),
+      ),
+      body: ListView(children: [
+        Column(
+          children: [
+            Text(
+              "السؤال الاول",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title:
+                    Text(" هل تقلدون دون الاخرين بغيت التكيف مع بيئة جديدة ؟"),
+                value: 1,
+                groupValue: v1,
+                onChanged: (val) {
+                  setState(() {
+                    v1 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(
+                    "ام تبقون كما انتم دون اجراء اي تغيير في تصرفاتكم العاديه؟"),
+                value: 9,
+                groupValue: v1,
+                onChanged: (val) {
+                  setState(() {
+                    v1 = val;
+                    print(v1);
+                  });
+                }),
+            Text(
+              "السؤال الثاني",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text("هل تستهويكم النشاطات و الرياضة العنيفة ؟ "),
+                value: 9,
+                groupValue: v2,
+                onChanged: (val) {
+                  setState(() {
+                    v2 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text("ام لا تفكرون اصلا بممارستها؟"),
+                value: 1,
+                groupValue: v2,
+                onChanged: (val) {
+                  setState(() {
+                    v2 = val;
+                    print(v2);
+                  });
+                }),
+            Center(
+              child: Text(
+                "السؤال الثالث",
+                style: TextStyle(
+                    color: Colors.redAccent,
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold),
+              ),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(
+                    "هل تحبون اثارة محادثات صاخبة والمشاركة في مناقشات ساخنة؟"),
+                value: 9,
+                groupValue: v3,
+                onChanged: (val) {
+                  setState(() {
+                    v3 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text("ام تفضلون الحذر المراقبة والاستمتاع دون التورط؟ "),
+                value: 1,
+                groupValue: v3,
+                onChanged: (val) {
+                  setState(() {
+                    v3 = val;
+                    print(v3);
+                  });
+                }),
+            Text(
+              "السؤال الرابع",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(
+                    "هل انتم بحاجه لاعتتراف الاخرين الكلي  (المقربين ام غيرهم) للشعور بالراحة؟ "),
+                value: 1,
+                groupValue: v4,
+                onChanged: (val) {
+                  setState(() {
+                    v4 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text("ام لا تهتموا الا لمشاعر من تحبون "),
+                value: 5,
+                groupValue: v4,
+                onChanged: (val) {
+                  setState(() {
+                    v4 = val;
+                    print(v4);
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title:
+                    Text("ام ان مشاعر الاخرين تجاهكم لاتهمكم وان كانت سلبية؟"),
+                value: 9,
+                groupValue: v4,
+                onChanged: (val) {
+                  setState(() {
+                    v4 = val;
+                    print(v4);
+                  });
+                }),
+            Text(
+              "السؤال الخامس",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(
+                    "هل تحبون جذب اهتمام الاشخاص الذين تصادفون وجعلهم يعجبون بكم(كالمجاملة مثلا) ؟"),
+                value: 1,
+                groupValue: v5,
+                onChanged: (val) {
+                  setState(() {
+                    v5 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text("ام انكم صريحون الى حد الفظاظة؟"),
+                value: 9,
+                groupValue: v5,
+                onChanged: (val) {
+                  setState(() {
+                    v5 = val;
+                    print(v5);
+                  });
+                }),
+            Text(
+              "السؤال السادس",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(
+                    "عندما تقررون شيئا هل تميلوا الى فرض قراركم على الاخرين الى درجة الضغط عليهم؟ "),
+                value: 9,
+                groupValue: v6,
+                onChanged: (val) {
+                  setState(() {
+                    v6 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title:
+                    Text("ام تتصرفون بمرونة  و لباقة مراعين حساسية الاخرين؟"),
+                value: 1,
+                groupValue: v6,
+                onChanged: (val) {
+                  setState(() {
+                    v6 = val;
+                    print(v6);
+                  });
+                }),
+            Text(
+              "السؤال السابع",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(
+                    "عندما لا يعجبكم شخص ما هل تسيطرون على هذا الشعور ببقائكم على لطفكم ولباقتكم ؟ ا"),
+                value: 1,
+                groupValue: v7,
+                onChanged: (val) {
+                  setState(() {
+                    v7 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(
+                    "  ام تظهرون كما تشعرون ، بابداء البرودة والامبالاة تجاه هذا الشخص؟"),
+                value: 9,
+                groupValue: v7,
+                onChanged: (val) {
+                  setState(() {
+                    v7 = val;
+                    print(v7);
+                  });
+                }),
+            Text(
+              "السؤال الثامن ",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title:
+                    Text("هل تحبون ان يشفق الاخرون عليكم وان يشعروا بالاسى ؟ا"),
+                value: 1,
+                groupValue: v8,
+                onChanged: (val) {
+                  setState(() {
+                    v8 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text("ام تكرهون الشفقة وتفضلوا البقاء وحدكم"),
+                value: 9,
+                groupValue: v8,
+                onChanged: (val) {
+                  setState(() {
+                    v8 = val;
+                    print(v8);
+                  });
+                }),
+            Text(
+              "السؤال التاسع ",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(
+                    "هل تحبون تيسير الاخرين ,اعطاء الاوامر بطريقه متسلطة؟ "),
+                value: 9,
+                groupValue: v9,
+                onChanged: (val) {
+                  setState(() {
+                    v9 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text("ام لا تحبون القيادةاصلاا"),
+                value: 1,
+                groupValue: v9,
+                onChanged: (val) {
+                  setState(() {
+                    v9 = val;
+                    print(v9);
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(
+                    " ام ان كنتم فب القيادة ،تقومن بالمهمة باليونة دون فرض سلطتكم بفظاطة"),
+                value: 5,
+                groupValue: v9,
+                onChanged: (val) {
+                  setState(() {
+                    v9 = val;
+                    print(v9);
+                  });
+                }),
+            Text(
+              "السؤال العاشر  ",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(
+                    "عند حل النزاعات هل تثيرون المعركه انتم بغيه حل القضيه بصوره اسرع ؟"),
+                value: 9,
+                groupValue: v10,
+                onChanged: (val) {
+                  setState(() {
+                    v10 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text("ام تبحثون عن حلها دبلوماسي؟"),
+                value: 1,
+                groupValue: v10,
+                onChanged: (val) {
+                  setState(() {
+                    v10 = val;
+                    print(v10);
+                  });
+                }),
+            SizedBox(
+              height: 5.5,
+              width: 3.3,
+            ),
+            GestureDetector(
+              onLongPress: () {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (context) {
+                  return forthtest();
+                }));
+              },
+              onTap: () {
+                setState(() {
+                  result =
+                      v1 + v2 + v3 + v4 + v5 + v6 + v7 + v8 + v9 + v10 / 10;
+                  if (result >= 5) {
+                    name = "قطبيتكم هي المريخ";
+                  }
+                  name = "قطبيتكم هي الزهرة";
+                  print(TimeOfDay.fromDateTime(DateTime.now()));
+
+                  print(name);
+                });
+              },
+              child: Container(
+                height: 100,
+                width: double.infinity,
+                color: Colors.orangeAccent,
+                child: Center(
+                    child: Text(
+                  "${name}",
+                  style: TextStyle(fontSize: 22),
+                )),
+              ),
+            )
+          ],
+        ),
+      ]),
+    );
+  }
+}
+
+class fifthtest extends StatefulWidget {
+  const fifthtest({Key? key}) : super(key: key);
+
+  @override
+  State<fifthtest> createState() => _fifthtestState();
+}
+
+class _fifthtestState extends State<fifthtest> {
+  var v1;
+  var v2;
+  var v3;
+  var v4;
+  var v5;
+  var v6;
+  var v7;
+  var v8;
+  var v9;
+  var v10;
+  var result;
+  String name = "اضغط هنا";
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("اختبار النهم"),
+      ),
+      body: ListView(children: [
+        Column(
+          children: [
+            Text(
+              "السؤال الاول",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(
+                    "هل تهتمون بانجازاتكم الخاصة ( الأهداف التي تحققونها في الرياضة والألعاب أو النتائج المهنية : عدد العقود ، المكافآت الخ ) حتى تتقدموا ؟ "),
+                value: 9,
+                groupValue: v1,
+                onChanged: (val) {
+                  setState(() {
+                    v1 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(" أم لا تأبهون لتلك الاهتمامات ؟"),
+                value: 1,
+                groupValue: v1,
+                onChanged: (val) {
+                  setState(() {
+                    v1 = val;
+                    print(v1);
+                  });
+                }),
+            Text(
+              "السؤال الثاني",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(
+                    " على صعيد العواطف :هل تشعرون أحياناً بغيرة تجاه بعض أصحابكم أو أقربائكم؟"),
+                value: 9,
+                groupValue: v2,
+                onChanged: (val) {
+                  setState(() {
+                    v2 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text("لا تعرفون الغيرة بتاتاً ؟"),
+                value: 1,
+                groupValue: v2,
+                onChanged: (val) {
+                  setState(() {
+                    v2 = val;
+                    print(v2);
+                  });
+                }),
+            Center(
+              child: Text(
+                "السؤال الثالث",
+                style: TextStyle(
+                    color: Colors.redAccent,
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold),
+              ),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(
+                    "هل تهتمون بكسب المزيد من المال أو المزيد من العلم أو المزيد من السلطة ؟"),
+                value: 9,
+                groupValue: v3,
+                onChanged: (val) {
+                  setState(() {
+                    v3 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(
+                    " أم  لا تهتمون لذلك لأن هذه الأمور ليست أساسية في الحياة ؟ "),
+                value: 1,
+                groupValue: v3,
+                onChanged: (val) {
+                  setState(() {
+                    v3 = val;
+                    print(v3);
+                  });
+                }),
+            Text(
+              "السؤال الرابع",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(
+                    "هل تعيرون أغراضكم بسهولة ( اسطوانات ، كتب ، معدات ، الخ ) ولو لم يطلب منكم ذلك ؟"),
+                value: 1,
+                groupValue: v4,
+                onChanged: (val) {
+                  setState(() {
+                    v4 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text("أم : حتى تعيرون أغراضكم فقط عندما يطلب منكم ؟"),
+                value: 5,
+                groupValue: v4,
+                onChanged: (val) {
+                  setState(() {
+                    v4 = val;
+                    print(v4);
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(
+                    " أم  تكرهون الإعارة خوفا من ............... فقدان هذه الأغراض أو تلفها ؟"),
+                value: 9,
+                groupValue: v4,
+                onChanged: (val) {
+                  setState(() {
+                    v4 = val;
+                    print(v4);
+                  });
+                }),
+            Text(
+              "السؤال الخامس",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text("هل تطالبون بحقوقكم ؟"),
+                value: 9,
+                groupValue: v5,
+                onChanged: (val) {
+                  setState(() {
+                    v5 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(
+                    "أم  تفضلون عدم المطالبة قائلين لأنفسكم « إن حصلت الأمور فهذا عظيم وإن لم تحصل فلا مشكلة » ؟"),
+                value: 1,
+                groupValue: v5,
+                onChanged: (val) {
+                  setState(() {
+                    v5 = val;
+                    print(v5);
+                  });
+                }),
+            Text(
+              "السؤال السادس",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text("هل تتذكرون قيمة الأشياء التي تشترونها ؟ "),
+                value: 9,
+                groupValue: v6,
+                onChanged: (val) {
+                  setState(() {
+                    v6 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text("م : تنسون بسرعة سعرها ؟"),
+                value: 1,
+                groupValue: v6,
+                onChanged: (val) {
+                  setState(() {
+                    v6 = val;
+                    print(v6);
+                  });
+                }),
+            Text(
+              "السؤال السابع",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(
+                    "هل تميلون إلى اقتناء المجموعات ( حتى ولو لم يكن لها قيمة تجارية  ؟"),
+                value: 9,
+                groupValue: v7,
+                onChanged: (val) {
+                  setState(() {
+                    v7 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(" أم  لا يهمكم هذا الأمر بتاتا ؟ "),
+                value: 1,
+                groupValue: v7,
+                onChanged: (val) {
+                  setState(() {
+                    v7 = val;
+                    print(v7);
+                  });
+                }),
+            Text(
+              "السؤال الثامن ",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(
+                    "هل تنتهزون الفرص حتى وإن لم تكن لديكم حاجات ملحة ظناً منكم أنها قد تفيدكم لاحقا ؟"),
+                value: 9,
+                groupValue: v8,
+                onChanged: (val) {
+                  setState(() {
+                    v8 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(
+                    "أم أنكم لا تأبهون للعروض التي لا تتعلق بحاجات فورية ؟"),
+                value: 1,
+                groupValue: v8,
+                onChanged: (val) {
+                  setState(() {
+                    v8 = val;
+                    print(v8);
+                  });
+                }),
+            Text(
+              "السؤال التاسع ",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(
+                    "هل تقلقون دائماً من إضاعة الوقت ، وتحاولون دائماً إنجاز أكبر قدر ممكن من العمل في أقل وقت ؟"),
+                value: 9,
+                groupValue: v9,
+                onChanged: (val) {
+                  setState(() {
+                    v9 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title:
+                    Text("أم : تنجزون الأعمال تدريجياً ، غير آبهين بالوقت ؟ "),
+                value: 1,
+                groupValue: v9,
+                onChanged: (val) {
+                  setState(() {
+                    v9 = val;
+                    print(v9);
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            Text(
+              "السؤال العاشر  ",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(
+                    "هل تحيّون أن تكونوا أفضل الناس في مجال معين ، أو أن تكونوا في الطليعة ؟"),
+                value: 9,
+                groupValue: v10,
+                onChanged: (val) {
+                  setState(() {
+                    v10 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(
+                    " أم لا تعيرون أهمية لهذا الأمر إلى حد القبول بالانسحاب أمام الآخرين؟"),
+                value: 1,
+                groupValue: v10,
+                onChanged: (val) {
+                  setState(() {
+                    v10 = val;
+                    print(v10);
+                  });
+                }),
+            SizedBox(
+              height: 5.5,
+              width: 3.3,
+            ),
+            GestureDetector(
+              onLongPress: () {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (context) {
+                  return forthtest();
+                }));
+              },
+              onTap: () {
+                setState(() {
+                  result =
+                      v1 + v2 + v3 + v4 + v5 + v6 + v7 + v8 + v9 + v10 / 10;
+                  if (result >= 5) {
+                    name = "😈 ";
+                  }
+                  name = " ";
+                  print(TimeOfDay.fromDateTime(DateTime.now()));
+
+                  print(name);
+                });
+              },
+              child: Container(
+                height: 100,
+                width: double.infinity,
+                color: Colors.orangeAccent,
+                child: Center(
+                    child: Text(
+                  "${name}",
+                  style: TextStyle(fontSize: 22),
+                )),
+              ),
+            )
+          ],
+        ),
+      ]),
+    );
+  }
+}
+
+class sixthtest extends StatefulWidget {
+  const sixthtest({Key? key}) : super(key: key);
+
+  @override
+  State<sixthtest> createState() => _sixthtestState();
+}
+
+class _sixthtestState extends State<sixthtest> {
+  var v1;
+  var v2;
+  var v3;
+  var v4;
+  var v5;
+  var v6;
+  var v7;
+  var v8;
+  var v9;
+  var v10;
+  var result;
+  String name = "اضغط هنا";
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Center(child: Text("اختبار الاهتمام الحسي")),
+      ),
+      body: ListView(children: [
+        Column(
+          children: [
+            Text(
+              "السؤال الاول",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(
+                    " تشعرون بالمتعة عندما يقدم طبق ما بصورة جيدة وهل تحبون التعرف إلى وصفات جديدة في الطبخ ؟"),
+                value: 9,
+                groupValue: v1,
+                onChanged: (val) {
+                  setState(() {
+                    v1 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(
+                    "أم لا تعيرون الأمر اهتمامكم ( إلا إذا أردتم إسعاد الآخرين ) "),
+                value: 1,
+                groupValue: v1,
+                onChanged: (val) {
+                  setState(() {
+                    v1 = val;
+                    print(v1);
+                  });
+                }),
+            Text(
+              "السؤال الثاني",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text("هل تحبون املاطفة ، الأطفال ومداعبة الحيوانات ؟ "),
+                value: 9,
+                groupValue: v2,
+                onChanged: (val) {
+                  setState(() {
+                    v2 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(
+                    " أم  تعتبرون الملامسة الجسدية غير مهمة ، بغض النظر عن عاطفتكم؟"),
+                value: 1,
+                groupValue: v2,
+                onChanged: (val) {
+                  setState(() {
+                    v2 = val;
+                    print(v2);
+                  });
+                }),
+            Center(
+              child: Text(
+                "السؤال الثالث",
+                style: TextStyle(
+                    color: Colors.redAccent,
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold),
+              ),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(
+                    "هل تنتبهون إلى ما يرتديه الآخرون ( تناسق الثياب ، نوعية الأقمشة وألوانها ، الخ )"),
+                value: 9,
+                groupValue: v3,
+                onChanged: (val) {
+                  setState(() {
+                    v3 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(" أم : لا تلاحظون ذلك ؟ "),
+                value: 1,
+                groupValue: v3,
+                onChanged: (val) {
+                  setState(() {
+                    v3 = val;
+                    print(v3);
+                  });
+                }),
+            Text(
+              "السؤال الرابع",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(
+                    "- هل يهمكم أن تعيشوا في جو جميل ( من المفروشات والديكور ، الخ )"),
+                value: 9,
+                groupValue: v4,
+                onChanged: (val) {
+                  setState(() {
+                    v4 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(
+                    "أم : تهتمون أكثر بالطابع العملي في منزلكم ( النظافة ، الخ ... ) وإن كان قليل التناسق ؟"),
+                value: 1,
+                groupValue: v4,
+                onChanged: (val) {
+                  setState(() {
+                    v4 = val;
+                    print(v4);
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            Text(
+              "السؤال الخامس",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(
+                    "هل أنتم حساسون تجاه بعض الروائح ، الألوان ، الأشكال أو بعض الأصوات ( التي تحبون أو تكرهون حسب الحالات ) ؟"),
+                value: 9,
+                groupValue: v5,
+                onChanged: (val) {
+                  setState(() {
+                    v5 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(
+                    "أم : إنها ليست إلا معلومات عن الأشياء لا تجعلكم تشعرون تجاهها بشعور خاص ؟"),
+                value: 1,
+                groupValue: v5,
+                onChanged: (val) {
+                  setState(() {
+                    v5 = val;
+                    print(v5);
+                  });
+                }),
+            Text(
+              "السؤال السادس",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(
+                    " هل تعيرون أهمية خاصة للفن في حياتكم ؟ هل هو قيمة مهمة بالنسبة لكم ؟"),
+                value: 9,
+                groupValue: v6,
+                onChanged: (val) {
+                  setState(() {
+                    v6 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text("أم : إن هذا اللمس لا يعني لكم شيئاً ؟"),
+                value: 1,
+                groupValue: v6,
+                onChanged: (val) {
+                  setState(() {
+                    v6 = val;
+                    print(v6);
+                  });
+                }),
+            Text(
+              "السؤال السابع",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(
+                    "هل تشعرون بأحاسيس شديدة ( ممتعة أم غير ممتعة ) عند لمس بعض الأقمشة أو المواد : الخشب ، الحديد ، الحرير ، الغراء ، الخ ؟"),
+                value: 9,
+                groupValue: v7,
+                onChanged: (val) {
+                  setState(() {
+                    v7 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(" أم : إن هذا اللمس لا يعني لكم شيئاً ؟ "),
+                value: 1,
+                groupValue: v7,
+                onChanged: (val) {
+                  setState(() {
+                    v7 = val;
+                    print(v7);
+                  });
+                }),
+            Text(
+              "السؤال الثامن ",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(
+                    " هل تحبون الأشياء الفخمة لجمالها ، لنوعيتها ولرقيها ، بعيداً عن رغبة في التباهي ؟"),
+                value: 9,
+                groupValue: v8,
+                onChanged: (val) {
+                  setState(() {
+                    v8 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text("أم : إن ذلك لا يعني لكم شيئا لأنه تافه ؟"),
+                value: 1,
+                groupValue: v8,
+                onChanged: (val) {
+                  setState(() {
+                    v8 = val;
+                    print(v8);
+                  });
+                }),
+            Text(
+              "السؤال التاسع ",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text("هل يثير ذكرياتكم القديمة حدث أو لون أو رائحة ؟ "),
+                value: 9,
+                groupValue: v9,
+                onChanged: (val) {
+                  setState(() {
+                    v9 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(
+                    "م : تعودون إلى الذكريات بالتفكير ، أو من خلال أحداث لها صلة مباشرة مع الماضي ( صور ، شرائط فيديو ، أشياء قديمة ، قصص مسرودة ، الخ ) ؟"),
+                value: 1,
+                groupValue: v9,
+                onChanged: (val) {
+                  setState(() {
+                    v9 = val;
+                    print(v9);
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            Text(
+              "السؤال العاشر  ",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(
+                    "هل تقدرون نوعية الأطعمة ورقي بعض الأطباق ؟ وهل تأخذون وقتكم للتلذذ بها ؟"),
+                value: 9,
+                groupValue: v10,
+                onChanged: (val) {
+                  setState(() {
+                    v10 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(
+                    " أم أنكم : تأكلون فقط بهدف التغذية دون إعارة الأمور السابقة أية أهمية ؟"),
+                value: 1,
+                groupValue: v10,
+                onChanged: (val) {
+                  setState(() {
+                    v10 = val;
+                    print(v10);
+                  });
+                }),
+            SizedBox(
+              height: 5.5,
+              width: 3.3,
+            ),
+            GestureDetector(
+              onLongPress: () {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (context) {
+                  return forthtest();
+                }));
+              },
+              onTap: () {
+                setState(() {
+                  result =
+                      v1 + v2 + v3 + v4 + v5 + v6 + v7 + v8 + v9 + v10 / 10;
+                  if (result >= 5) {
+                    name = "تميلون الى الاهتمامات الحسية";
+                  }
+                  name = "  تميلون الى الاهتمامات الحسيي";
+                  print(TimeOfDay.fromDateTime(DateTime.now()));
+
+                  print(name);
+                });
+              },
+              child: Container(
+                height: 100,
+                width: double.infinity,
+                color: Colors.orangeAccent,
+                child: Center(
+                    child: Text(
+                  "${name}",
+                  style: TextStyle(fontSize: 22),
+                )),
+              ),
+            )
+          ],
+        ),
+      ]),
+    );
+  }
+}
+
+///////////////////////////////
+
+class seventh extends StatefulWidget {
+  const seventh({Key? key}) : super(key: key);
+
+  @override
+  State<seventh> createState() => _seventhState();
+}
+
+class _seventhState extends State<seventh> {
+  var v1;
+  var v2;
+  var v3;
+  var v4;
+  var v5;
+  var v6;
+  var v7;
+  var v8;
+  var v9;
+  var v10;
+  var result;
+  String name = "اضغط هنا";
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("اختبار الحنان"),
+      ),
+      body: ListView(children: [
+        Column(
+          children: [
+            Text(
+              "السؤال الاول",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title:
+                    Text("هل تعيرون اهتماماً لمشاعر الأشخاص لا إلى أفعالهم ؟ "),
+                value: 9,
+                groupValue: v1,
+                onChanged: (val) {
+                  setState(() {
+                    v1 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title:
+                    Text(" أم  تأخذون بعين الاعتبار الأفعال فقط أو النتائج ؟"),
+                value: 1,
+                groupValue: v1,
+                onChanged: (val) {
+                  setState(() {
+                    v1 = val;
+                    print(v1);
+                  });
+                }),
+            Text(
+              "السؤال الثاني",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(" هل أنتم بحاجة إلى الالتقاء غالباً بأصدقائكم ؟"),
+                value: 9,
+                groupValue: v2,
+                onChanged: (val) {
+                  setState(() {
+                    v2 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(
+                    " أم  تستطيعون الاستغناء عن رؤيتهم لمدة طويلة دون أن تتأثر طبيعة العلاقة بذلك ؟"),
+                value: 1,
+                groupValue: v2,
+                onChanged: (val) {
+                  setState(() {
+                    v2 = val;
+                    print(v2);
+                  });
+                }),
+            Center(
+              child: Text(
+                "السؤال الثالث",
+                style: TextStyle(
+                    color: Colors.redAccent,
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold),
+              ),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(
+                    "هل تحبون الأولاد والحيوانات (كالخيل مثلا او الغزلان)والطبيعة ؟"),
+                value: 9,
+                groupValue: v3,
+                onChanged: (val) {
+                  setState(() {
+                    v3 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(" أم : أنتم حياديون تجاه ذلك "),
+                value: 1,
+                groupValue: v3,
+                onChanged: (val) {
+                  setState(() {
+                    v3 = val;
+                    print(v3);
+                  });
+                }),
+            Text(
+              "السؤال الرابع",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(
+                    "عندما تتخذون قراراً هل تأخذون بعين الاعتبار الانعكاسات الممكنة على الآخرين ؟"),
+                value: 9,
+                groupValue: v4,
+                onChanged: (val) {
+                  setState(() {
+                    v4 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(" أم : تتصرفون دون الاهتمام إلا بقضيتكم ؟ "),
+                value: 1,
+                groupValue: v4,
+                onChanged: (val) {
+                  setState(() {
+                    v4 = val;
+                    print(v4);
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            Text(
+              "السؤال الخامس",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(
+                    " هل تعبرون بسهولة عن عاطفتكم بالكلمات أو بالحركات الحنونة ؟"),
+                value: 9,
+                groupValue: v5,
+                onChanged: (val) {
+                  setState(() {
+                    v5 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(
+                    " أم : تترجمون هذه العاطفة بأفعال ( سماع الآخرين ، تقديم الخدمات ، الخ ) ؟"),
+                value: 1,
+                groupValue: v5,
+                onChanged: (val) {
+                  setState(() {
+                    v5 = val;
+                    print(v5);
+                  });
+                }),
+            Text(
+              "السؤال السادس",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text("هل الحب أو العطف قيمتان أساسيتان بالنسبة لكم ؟ "),
+                value: 9,
+                groupValue: v6,
+                onChanged: (val) {
+                  setState(() {
+                    v6 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(
+                    "أم : هناك أمور أخرى أهم بكثير من هذه الأمور الثانوية بالنسبة لكم ؟"),
+                value: 1,
+                groupValue: v6,
+                onChanged: (val) {
+                  setState(() {
+                    v6 = val;
+                    print(v6);
+                  });
+                }),
+            Text(
+              "السؤال السابع",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(
+                    "هل تعتبرون أن الآخرين وسيلة عملية تساعدكم على تحقيق أهدافكم مستغلين نواياهم الطيبة ؟"),
+                value: 1,
+                groupValue: v7,
+                onChanged: (val) {
+                  setState(() {
+                    v7 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(
+                    " أم : أنتم في خدمتهم أكثر وتعتبرون أن مصالحكم الشخصية تأتي في مرتبة ثانية ؟ "),
+                value: 9,
+                groupValue: v7,
+                onChanged: (val) {
+                  setState(() {
+                    v7 = val;
+                    print(v7);
+                  });
+                }),
+            Text(
+              "السؤال الثامن ",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(
+                    "هل بإمكانكم صرف(طرد) مساعد غير جدير ( أو عامل في منزلكم ) يعمل معكم منذ مدة ؟ "),
+                value: 1,
+                groupValue: v8,
+                onChanged: (val) {
+                  setState(() {
+                    v8 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text("أم : تفضلون إيجاد حل آخر مهتمين بمصيره ؟ "),
+                value: 9,
+                groupValue: v8,
+                onChanged: (val) {
+                  setState(() {
+                    v8 = val;
+                    print(v8);
+                  });
+                }),
+            Text(
+              "السؤال التاسع ",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text("هل تحبون رفقة الأطفال ؟ هل تلعبون معهم ؟"),
+                value: 9,
+                groupValue: v9,
+                onChanged: (val) {
+                  setState(() {
+                    v9 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text("أم أنتم حياديون ، وتدعونهم يلعبون بمفردهم ؟"),
+                value: 5,
+                groupValue: v9,
+                onChanged: (val) {
+                  setState(() {
+                    v9 = val;
+                    print(v9);
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(" أم : الأولاد يزعجونكم ؟"),
+                value: 1,
+                groupValue: v9,
+                onChanged: (val) {
+                  setState(() {
+                    v9 = val;
+                    print(v9);
+                  });
+                }),
+            Text(
+              "السؤال العاشر  ",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(
+                    " هل تشعرون بآلام الآخرين المعنوية ( كما لو كنتم أنتم المنكوبين ) ؟ "),
+                value: 9,
+                groupValue: v10,
+                onChanged: (val) {
+                  setState(() {
+                    v10 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title:
+                    Text("أم : تتفهمون الآخرين دون الشعور بهم يصورة كباشره؟ "),
+                value: 1,
+                groupValue: v10,
+                onChanged: (val) {
+                  setState(() {
+                    v10 = val;
+                    print(v10);
+                  });
+                }),
+            SizedBox(
+              height: 5.5,
+              width: 3.3,
+            ),
+            GestureDetector(
+              onLongPress: () {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (context) {
+                  return seventh();
+                }));
+              },
+              onTap: () {
+                setState(() {
+                  result =
+                      v1 + v2 + v3 + v4 + v5 + v6 + v7 + v8 + v9 + v10 / 10;
+                  if (result >= 5) {
+                    name = "انتم حنونين";
+                  }
+                  if (result < 5) {
+                    name = "غير حنون";
+                  }
+                  print(TimeOfDay.fromDateTime(DateTime.now()));
+
+                  print(name);
+                });
+              },
+              child: Container(
+                height: 100,
+                width: double.infinity,
+                color: Colors.orangeAccent,
+                child: Center(
+                    child: Text(
+                  "${name}",
+                  style: TextStyle(fontSize: 22),
+                )),
+              ),
+            )
+          ],
+        ),
+      ]),
+    );
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+class eightth extends StatefulWidget {
+  const eightth({Key? key}) : super(key: key);
+
+  @override
+  State<eightth> createState() => _eightthState();
+}
+
+class _eightthState extends State<eightth> {
+  var v1;
+  var v2;
+  var v3;
+  var v4;
+  var v5;
+  var v6;
+  var v7;
+  var v8;
+  var v9;
+  var v10;
+  var result;
+  String name = "اضغط هنا";
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("اختبار الشغف الفكري "),
+      ),
+      body: ListView(children: [
+        Column(
+          children: [
+            Text(
+              "السؤال الاول",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text("هل تحبون الأفكار البسيطة ، الواضحة ، المفهومة ؟ "),
+                value: 1,
+                groupValue: v1,
+                onChanged: (val) {
+                  setState(() {
+                    v1 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text("ام تحبون التطرق إلى مسائل معقدة أو مواضيع تثير تفكيركم ؟"),
+                value: 9,
+                groupValue: v1,
+                onChanged: (val) {
+                  setState(() {
+                    v1 = val;
+                    print(v1);
+                  });
+                }),
+            Text(
+              "السؤال الثاني",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text("هل تحاولون فهم قطعة فنية ؟"),
+                value: 9,
+                groupValue: v2,
+                onChanged: (val) {
+                  setState(() {
+                    v2 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text("أم : تستمتعون فقط بتأقلها دون محاولة فهمها ؟"),
+                value: 1,
+                groupValue: v2,
+                onChanged: (val) {
+                  setState(() {
+                    v2 = val;
+                    print(v2);
+                  });
+                }),
+            Center(
+              child: Text(
+                "السؤال الثالث",
+                style: TextStyle(
+                    color: Colors.redAccent,
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold),
+              ),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text("هل تفضلون المشاكل الحسية التي تؤدي إلى تطبيق عملي ؟"),
+                value: 1,
+                groupValue: v3,
+                onChanged: (val) {
+                  setState(() {
+                    v3 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text("  أم : تعيرون أهمية لتحليل الأفكار والنظريات البعيدة عن التطبيق العملي ؟"),
+                value: 9,
+                groupValue: v3,
+                onChanged: (val) {
+                  setState(() {
+                    v3 = val;
+                    print(v3);
+                  });
+                }),
+            Text(
+              "السؤال الرابع",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text("هل تفضلون الأحاديث ، المناقشات ، الألعاب الفكرية ( الدراسات ، المناظرات ) ؟"),
+                value: 9,
+                groupValue: v4,
+                onChanged: (val) {
+                  setState(() {
+                    v4 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text("ام : تفضلون أنواعاً أخرى من التسالي ( النزهات ، الرياضة ، الرحلات ) ؟"),
+                value: 1,
+                groupValue: v4,
+                onChanged: (val) {
+                  setState(() {
+                    v4 = val;
+                    print(v4);
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(" أم  تهتمون للنوعين السابقين ولا تفضلون نوعاً على نوع ؟"),
+                value: 5,
+                groupValue: v4,
+                onChanged: (val) {
+                  setState(() {
+                    v4 = val;
+                    print(v4);
+                  });
+                }),
+            Text(
+              "السؤال الخامس",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text("هل تعتبرون أن لكل شيء تفسيراً ؟"),
+                value: 9,
+                groupValue: v5,
+                onChanged: (val) {
+                  setState(() {
+                    v5 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text("أم  تعتبرون أن بعض الأمور تستوجب بقاءها في المجهول وعدم محاولة فهمها ؟"),
+                value: 1,
+                groupValue: v5,
+                onChanged: (val) {
+                  setState(() {
+                    v5 = val;
+                    print(v5);
+                  });
+                }),
+            Text(
+              "السؤال السادس",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text("هل تجذبكم قصص المغامرات أو أفلام الحركة ؟"),
+                value: 1,
+                groupValue: v6,
+                onChanged: (val) {
+                  setState(() {
+                    v6 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text("أم : تفضلون « الأجواء النفسية حيث يمكن أن تشدكم فكرة فلسفية أو أخلاقية ؟"),
+                value: 9,
+                groupValue: v6,
+                onChanged: (val) {
+                  setState(() {
+                    v6 = val;
+                    print(v6);
+                  });
+                }),
+            Text(
+              "السؤال السابع",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text("عندما تكتشفون للمرة الأولى آلة أو جهازاً ، هل تحاولون معرفة كيفية استعماله » ؟ "),
+                value: 1,
+                groupValue: v7,
+                onChanged: (val) {
+                  setState(() {
+                    v7 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(" أم : تحاولون أيضاً معرفة تقنيته ودراسة مبادىء عمله ؟ "),
+                value: 9,
+                groupValue: v7,
+                onChanged: (val) {
+                  setState(() {
+                    v7 = val;
+                    print(v7);
+                  });
+                }),
+            Text(
+              "السؤال الثامن ",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text("هل تستمتعون بالالتقاء بأصدقائكم لمشاطرتهم أوقاتاً مريحة ؟"),
+                value: 1,
+                groupValue: v8,
+                onChanged: (val) {
+                  setState(() {
+                    v8 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text("أم : تعيرون اهتماماً لما يفكر فيه اصدقاؤكم ، أقرباؤكم وتحبون تحليل عواطفهم ؟"),
+                value: 9,
+                groupValue: v8,
+                onChanged: (val) {
+                  setState(() {
+                    v8 = val;
+                    print(v8);
+                  });
+                }),
+            Text(
+              "السؤال التاسع ",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(" هل أنتم بحاجة إلى تفهم الأمور ، والتقاط الأساس فيها بسرعة ؟ أم : تفضلون إعارة الأمور وقتاً للتعمق فيها وتحليلها بغية تفهمها أكثر ؟ "),
+                value: 1,
+                groupValue: v9,
+                onChanged: (val) {
+                  setState(() {
+                    v9 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text("هل تهتمون بموضوع خال من أي فائدة عملية ، فقط للذة فهمه ؟ "),
+                value: 9,
+                groupValue: v9,
+                onChanged: (val) {
+                  setState(() {
+                    v9 = val;
+                    print(v9);
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+
+
+            Text(
+              "السؤال العاشر  ",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text("هل تهتمون بموضوع خال من أي فائدة عملية ، فقط للذة فهمه ؟ "),
+                value: 9,
+                groupValue: v10,
+                onChanged: (val) {
+                  setState(() {
+                    v10 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text("أم : إن أردتم التعمق في موضوع بغية فهمه ، فذلك فقط بهدف تطبيقه عملياً ؟"),
+                value: 1,
+                groupValue: v10,
+                onChanged: (val) {
+                  setState(() {
+                    v10 = val;
+                    print(v10);
+                  });
+                }),
+            SizedBox(
+              height: 5.5,
+              width: 3.3,
+            ),
+            GestureDetector(
+              onLongPress: () {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (context) {
+                  return eightth();
+                }));
+              },
+              onTap: () {
+                setState(() {
+                  result =
+                      v1 + v2 + v3 + v4 + v5 + v6 + v7 + v8 + v9 + v10 / 10;
+                  if (result >= 5) {
+                    name ="تملةن للشغف الفكري";
+                  }
+                  name = "لا تميلون للشغف الفكري";
+                  print(TimeOfDay.fromDateTime(DateTime.now()));
+
+                  print(name);
+                });
+              },
+              child: Container(
+                height: 100,
+                width: double.infinity,
+                color: Colors.orangeAccent,
+                child: Center(
+                    child: Text(
+                  "${name}",
+                  style: TextStyle(fontSize: 22),
+                )),
+              ),
+            )
+          ],
+        ),
+      ]),
+    );
+  }
+}

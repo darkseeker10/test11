@@ -1,0 +1,20 @@
+void main(){
+  num salary=5000;
+  
+  switch(salary){
+    case 200:
+        print("this is so sweet");
+      break;
+      
+    case 400:
+      print("that is the truth and so nice to seee what i want ");
+      break;
+      
+    default:
+      print("God please help me");
+      
+  }
+}
+
+
+//we can use string too with swich  case

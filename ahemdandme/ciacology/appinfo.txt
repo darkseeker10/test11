@@ -1,0 +1,80 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
+class app_info extends StatelessWidget {
+  const app_info({Key? key}) : super(key: key);
+
+  @override
+
+  Widget build(BuildContext context) {
+    int count =1;
+
+    return Scaffold(
+      appBar: AppBar(title: Text("momo")),
+      backgroundColor: Colors.black38,
+      body: Center(
+        child: ListView(
+          children: [
+            Container(
+
+              width: double.infinity,
+              height: 100.0,
+              color:Colors.lightGreenAccent,
+            ),
+            SizedBox(height: 10,),
+            Container(
+
+              width: double.infinity,
+              height: 100.0,
+              color:Colors.lightGreenAccent,
+            ),
+            SizedBox(height: 10,),
+            Container(
+
+              width: double.infinity,
+              height: 100.0,
+              color:Colors.lightGreenAccent,
+            ),
+            SizedBox(height: 10,),
+            Container(
+
+              width: double.infinity,
+              height: 100.0,
+              color:Colors.lightGreenAccent,
+            ),
+            SizedBox(height: 10,),
+            Container(
+
+              width: double.infinity,
+              height: 1000,
+              color:Colors.black26,
+            ),
+            SizedBox(height: 10,),
+            Container(
+
+              width: double.infinity,
+              height: 100.0,
+              color:Colors.lightGreenAccent,
+            ),
+            SizedBox(height: 10,),
+            Container(
+
+              width: double.infinity,
+              height: 100.0,
+              color:Colors.lightGreenAccent,
+            ),
+            SizedBox(height: 10,),
+
+          ],
+        ),
+
+
+
+
+
+
+      ),
+    );
+  }
+}
+

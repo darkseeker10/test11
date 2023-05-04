@@ -1,0 +1,108 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
+void main() => runApp(app());
+
+class app extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Center(
+            child: Text("happy day"),
+          ),
+          backgroundColor: Colors.lightGreenAccent,
+        ),
+        backgroundColor: Colors.amber,
+        body: SafeArea(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                margin: EdgeInsets.all(5),
+                padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.8),
+                child: Center(
+                  child: CircleAvatar(
+                    radius: 50,
+                    backgroundImage: AssetImage("pip/lo.jpg"),
+                    child: Text("2022"),
+                  ),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+                padding: EdgeInsets.all(10),
+                child: Text(
+                  "mustafa programmmer ",
+                  style: TextStyle(
+                      color: Colors.lightGreenAccent,
+                      fontSize: 34,
+                      fontWeight: FontWeight.bold),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.symmetric(vertical: 120, horizontal: 0),
+                child: Text(
+                  "welcome to our website",
+                  style: TextStyle(
+                      fontSize: 40,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.deepOrange),
+                ),
+              ),
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    margin: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+                    padding: EdgeInsets.only(left: 0.0, right: 20),
+                    child: Icon(
+                      Icons.email,
+                      size: 44,
+                      color: Colors.blue,
+                    ),
+                  ),
+                  Container
+                    (
+                    color: Colors.lightGreenAccent,
+
+                      child: Text("www.mustafa.com",
+                  style: TextStyle(
+                    fontSize: 44,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.blueGrey,
+
+                  ),)
+                  ),
+                  Card(
+
+                    margin: EdgeInsets.all(20),
+                    child: Text("new task"),
+                    color: Colors.amberAccent,
+
+                  ),
+                  
+                  Card(
+
+                    margin: EdgeInsets.symmetric(horizontal: 0,vertical: 0),
+                    color: Colors.tealAccent,
+                  ),
+
+
+
+                ],
+              ),
+            ],
+          ),
+
+        ),
+
+      ),
+    );
+  }
+}
+
+
+

@@ -1,0 +1,19 @@
+  child: TextFormField(
+              decoration: InputDecoration(
+
+                fillColor: Colors.blue,
+                filled: true,
+                prefix: Icon(Icons.verified_user_rounded, color: Colors.red,),
+                prefixIcon: Icon(Icons.local_laundry_service_sharp),
+                prefixStyle: TextStyle(fontWeight: FontWeight.bold),
+                labelText: "addd more",
+                labelStyle: TextStyle(color: Colors.yellowAccent),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(2.2)
+                ),
+
+
+                hintText: "mustafa",
+              ),
+
+            ),

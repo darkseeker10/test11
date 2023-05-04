@@ -1,0 +1,232 @@
+import 'package:family/firsttest.dart';
+import 'package:family/secondtest.dart';
+import 'package:flutter/material.dart';
+
+class Appuse extends StatefulWidget {
+  const Appuse({Key? key}) : super(key: key);
+
+  @override
+  State<Appuse> createState() => _AppuseState();
+}
+
+class _AppuseState extends State<Appuse> {
+  var Country;
+  var Test = 0;
+  var result = 0;
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Center(child: Text("  استخدام   التطبيق      ")),
+        centerTitle: true,
+        backgroundColor: Colors.redAccent,
+      ),
+      backgroundColor: Colors.blueGrey,
+      body: Center(
+        child: ListView(children: [
+          GestureDetector(
+            onTap: () {},
+            child: Container(
+              margin: EdgeInsets.only(top: 10),
+              height: 100,
+              width: double.infinity,
+              decoration: BoxDecoration(
+                color: Colors.amberAccent,
+                borderRadius: BorderRadius.all(
+                  Radius.circular(20.0),
+                ),
+              ),
+              child: Center(
+                child: Text(
+                  "من اجل الحصول على تقيم حقيقي يجب الاجابة بكل صراحة وشفافية ",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 30.3,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black,
+                  ),
+                ),
+              ),
+            ),
+          ),
+          SizedBox(
+            height: 10.0,
+          ),
+          GestureDetector(
+            onTap: () {
+              Navigator.of(context).push(MaterialPageRoute(
+                builder: (context) {
+                  return first();
+                },
+              ));
+            },
+            child: Container(
+              width: double.infinity,
+              height: 100.0,
+              decoration: BoxDecoration(
+                  color: Colors.green,
+                  border: Border.all(color: Colors.amber, width: 2.2)),
+              child: Center(
+                  child: Text(
+                "اختبار  الانفعاالية",
+                style: TextStyle(color: Colors.black87, fontSize: 17.7),
+              )),
+            ),
+          ),
+          SizedBox(
+            height: 10.0,
+          ),
+          GestureDetector(
+            onTap:(){
+              Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context){
+                    return secondtest();
+                  }));
+            },
+            child: Container(
+              width: double.infinity,
+              height: 100.0,
+              decoration: BoxDecoration(
+                  color: Colors.green,
+                  border: Border.all(color: Colors.amber, width: 2.2)),
+              child: Center(
+                  child: Text(
+                "اختبار الحيوية ",
+                style: TextStyle(color: Colors.black87, fontSize: 17.7),
+              )),
+            ),
+          ),
+          SizedBox(
+            height: 10.0,
+          ),
+          GestureDetector(
+            onTap: (){
+              Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context){
+                    return thirdtest();
+                  },
+                  ));
+            },
+            child: Container(
+              width: double.infinity,
+              height: 100.0,
+              decoration: BoxDecoration(
+                  color: Colors.green,
+                  border: Border.all(color: Colors.amber, width: 2.2)),
+              child: Center(
+                  child: Text(
+                "اختباراتساع الوعي ",
+                style: TextStyle(color: Colors.black87, fontSize: 17.7),
+              )),
+            ),
+          ),
+          SizedBox(
+            height: 10.0,
+          ),
+          GestureDetector(
+            onTap: (){
+              Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context){
+                    return forthtest();
+                  },
+              ));
+            },
+            child: Container(
+              width: double.infinity,
+              height: 100.0,
+              decoration: BoxDecoration(
+                  color: Colors.green,
+                  border: Border.all(color: Colors.amber, width: 2.2)),
+              child: Center(
+                  child: Text(
+                "اختبارالقطبية  ",
+                style: TextStyle(color: Colors.black87, fontSize: 17.7),
+              )),
+            ),
+          ),
+          SizedBox(
+            height: 10.0,
+          ),
+          GestureDetector(
+            onTap: (){
+              Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context){
+                    return fifthtest();
+                  }
+                  ));
+            },
+            child: Container(
+              width: double.infinity,
+              height: 100.0,
+              decoration: BoxDecoration(
+                  color: Colors.green,
+                  border: Border.all(color: Colors.amber, width: 2.2)),
+              child: Center(
+                  child: Text("اختبار النهم  ",
+                style: TextStyle(color: Colors.black87, fontSize: 17.7),
+              )),
+            ),
+          ),
+          SizedBox(
+            height: 10.0,
+          ),
+          GestureDetector(
+            onTap: (){
+              Navigator.of(context).push(MaterialPageRoute(
+                  builder:(context){
+                    return sixthtest();
+                  }));
+            },
+            child: Container(
+              width: double.infinity,
+              height: 100.0,
+              decoration: BoxDecoration(
+                  color: Colors.green,
+                  border: Border.all(color: Colors.amber, width: 2.2)),
+              child: Center(
+                  child: Text(
+                "اختبار الاهتمام الحسي",
+                style: TextStyle(color: Colors.black87, fontSize: 17.7),
+              )),
+            ),
+          ),
+          SizedBox(
+            height: 10.0,
+          ),
+          GestureDetector(
+            onTap: (){
+              Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context){
+                    return seventh();
+                  }));
+            },
+            child: GestureDetector(
+              onTap: (){
+                Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context){
+                      return eightth();
+                    }));
+              },
+              child: Container(
+                width: double.infinity,
+                height: 100.0,
+                decoration: BoxDecoration(
+                    color: Colors.green,
+                    border: Border.all(color: Colors.amber, width: 2.2)),
+                child: Center(
+                    child: Text(
+                  "اختبار الشغف الفكري",
+                  style: TextStyle(color: Colors.black87, fontSize: 17.7),
+                )),
+              ),
+            ),
+          ),
+          SizedBox(
+            height: 10.0,
+          ),
+        ]),
+      ),
+    );
+  }
+}

@@ -1,0 +1,81 @@
+import 'package:family/Appuse.dart';
+import 'package:flutter/material.dart';
+
+import 'App_info.dart';
+
+class Test extends StatefulWidget {
+  const Test({Key? key}) : super(key: key);
+
+  @override
+  State<Test> createState() => _TestState();
+}
+
+class _TestState extends State<Test> {
+  TextEditingController titleController = TextEditingController();
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(
+          "نانا وال 1210",
+          style: TextStyle(fontSize: 33.3, color: Colors.red),
+        ),
+      ),
+      drawer: Drawer(),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          GestureDetector(
+            onTap: () {
+              Navigator.of(context).push(MaterialPageRoute(
+                builder: (context) {
+                  return app_info();
+
+                },
+              ));
+            },
+            child: Container(
+              width: double.infinity,
+              height: 50,
+              margin: EdgeInsets.only(left: 22, right: 22),
+              color: Colors.lightGreen,
+              child: Center(
+                  child: Text(
+                "معلومات عن التطبيق",
+                style: TextStyle(fontSize: 22.2),
+                textAlign: TextAlign.center,
+              )),
+            ),
+          ),
+          SizedBox(
+            height: 20.0,
+          ),
+          GestureDetector(
+            onTap: (){
+              Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) {
+                    return Appuse();
+                  }
+                    ));
+
+               },
+
+            child: Container(
+              width: double.infinity,
+              height: 50,
+              margin: EdgeInsets.only(left: 22.2, right: 22.2, bottom: 100),
+              color: Colors.lightGreen,
+              child: Center(
+                  child: Text(
+                "استخدام التطبيق",
+                style: TextStyle(fontSize: 22.2),
+                textAlign: TextAlign.center,
+              )),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}

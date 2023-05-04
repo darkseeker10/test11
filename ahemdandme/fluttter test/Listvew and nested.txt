@@ -1,0 +1,75 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/widgets.dart';
+import 'package:flutter/material.dart';
+
+class Test extends StatefulWidget {
+  State<StatefulWidget> createState() {
+    return TestState();
+  }
+}
+
+class TestState extends State<Test> {
+  String count = "";
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(),
+      drawer: Drawer(),
+      body: Container(
+        width: 600.0,
+        child: ListView(
+
+          //here the صفات الويجيد
+          children: [
+            Container(
+              height: 100.0,
+              color: Colors.lightBlueAccent,
+            ),
+            Container(
+              height: 500.0,
+              color: Colors.teal,
+            ),
+
+            Container(
+              height: 700.0,
+              color: Colors.teal,
+
+            ),
+            Container(
+              height: 300.0,
+              color: Colors.pink,
+              child: ListView(
+                //this s is about nested liked list and importanat too much
+                children: [
+                  Container(
+                    color: Colors.green,
+                    height: 100.4,
+                  ),
+                  Container(
+                    color: Colors.green,
+                    height: 100.4,
+                  ),
+                  Container(
+                    color: Colors.green,
+                    height: 100.4,
+                  ),
+                  Container(
+                    color: Colors.green,
+                    height: 100.4,
+                  ),
+                  Container(
+                    color: Colors.green,
+                    height: 100.4,
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+
+    );
+  }
+}
+

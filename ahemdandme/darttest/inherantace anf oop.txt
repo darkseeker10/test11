@@ -1,0 +1,32 @@
+class info{
+  String ?name;
+  int? age;
+  int? salary;
+  String? city;
+  
+  //finction  in the class and then inhertance 
+  view(){
+    print(this.age);
+    
+  }
+  
+}
+//take the function and attribute from the above class 
+
+class mustafaa extends info{}
+
+
+// the main and the fianl exe to the code above 
+ void  main(){
+   var mustafa = info();
+   mustafa.age =4;
+   
+   var nafi = mustafaa();
+   nafi.age = 44;
+   
+   
+   mustafa.view();
+   nafi.view();
+   
+   
+ }

@@ -1,0 +1,31 @@
+ final list = [];
+
+class numbers {
+  int ?age ;
+  int? salary;
+ 
+  add(int x){
+    print("add");
+ 
+    list.add(x);
+    print(list);
+    
+  }
+}
+
+
+main(){
+  var mustafa = new numbers();
+  mustafa.age =33;
+  mustafa.salary =44;
+  
+  mustafa.add(3030);
+  print(mustafa.age);
+  
+  print(list);
+  
+  
+}
+
+
+

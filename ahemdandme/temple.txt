@@ -1,0 +1,403 @@
+   body:  ListView(children: [
+        Column(
+          children: [
+            Text(
+              "السؤال الاول",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(" "),
+                value: 9,
+                groupValue: v1,
+                onChanged: (val) {
+                  setState(() {
+                    v1 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(""),
+                value: 1,
+                groupValue: v1,
+                onChanged: (val) {
+                  setState(() {
+                    v1 = val;
+                    print(v1);
+                  });
+                }),
+            Text(
+              "السؤال الثاني",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(" "),
+                value: 9,
+                groupValue: v2,
+                onChanged: (val) {
+                  setState(() {
+                    v2 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(""),
+                value: 1,
+                groupValue: v2,
+                onChanged: (val) {
+                  setState(() {
+                    v2 = val;
+                    print(v2);
+                  });
+                }),
+            Center(
+              child: Text(
+                "السؤال الثالث",
+                style: TextStyle(
+                    color: Colors.redAccent,
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold),
+              ),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(""),
+                value: 9,
+                groupValue: v3,
+                onChanged: (val) {
+                  setState(() {
+                    v3 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(" "),
+                value: 1,
+                groupValue: v3,
+                onChanged: (val) {
+                  setState(() {
+                    v3 = val;
+                    print(v3);
+                  });
+                }),
+            Text(
+              "السؤال الرابع",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(""),
+                value: 9,
+                groupValue: v4,
+                onChanged: (val) {
+                  setState(() {
+                    v4 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(""),
+                value: 5,
+                groupValue: v4,
+                onChanged: (val) {
+                  setState(() {
+                    v4 = val;
+                    print(v4);
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(""),
+                value: 1,
+                groupValue: v4,
+                onChanged: (val) {
+                  setState(() {
+                    v4 = val;
+                    print(v4);
+                  });
+                }),
+            Text(
+              "السؤال الخامس",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(""),
+                value: 9,
+                groupValue: v5,
+                onChanged: (val) {
+                  setState(() {
+                    v5 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(""),
+                value: 1,
+                groupValue: v5,
+                onChanged: (val) {
+                  setState(() {
+                    v5 = val;
+                    print(v5);
+                  });
+                }),
+            Text(
+              "السؤال السادس",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(""),
+                value: 9,
+                groupValue: v6,
+                onChanged: (val) {
+                  setState(() {
+                    v6 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(""),
+                value: 1,
+                groupValue: v6,
+                onChanged: (val) {
+                  setState(() {
+                    v6 = val;
+                    print(v6);
+                  });
+                }),
+            Text(
+              "السؤال السابع",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(""),
+                value: 9,
+                groupValue: v7,
+                onChanged: (val) {
+                  setState(() {
+                    v7 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text("  "),
+                value: 1,
+                groupValue: v7,
+                onChanged: (val) {
+                  setState(() {
+                    v7 = val;
+                    print(v7);
+                  });
+                }),
+            Text(
+              "السؤال الثامن ",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(""),
+                value: 9,
+                groupValue: v8,
+                onChanged: (val) {
+                  setState(() {
+                    v8 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(""),
+                value: 1,
+                groupValue: v8,
+                onChanged: (val) {
+                  setState(() {
+                    v8 = val;
+                    print(v8);
+                  });
+                }),
+            Text(
+              "السؤال التاسع ",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(""),
+                value: 9,
+                groupValue: v9,
+                onChanged: (val) {
+                  setState(() {
+                    v9 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(""),
+                value: 5,
+                groupValue: v9,
+                onChanged: (val) {
+                  setState(() {
+                    v9 = val;
+                    print(v9);
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(" "),
+                value: 1,
+                groupValue: v9,
+                onChanged: (val) {
+                  setState(() {
+                    v9 = val;
+                    print(v9);
+                  });
+                }),
+            Text(
+              "السؤال العاشر  ",
+              style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(""),
+                value: 9,
+                groupValue: v10,
+                onChanged: (val) {
+                  setState(() {
+                    v10 = val;
+                  });
+                }),
+            SizedBox(
+              height: 2,
+            ),
+            RadioListTile(
+                tileColor: Colors.purpleAccent,
+                activeColor: Colors.black,
+                title: Text(""),
+                value: 1,
+                groupValue: v10,
+                onChanged: (val) {
+                  setState(() {
+                    v10 = val;
+                    print(v10);
+                  });
+                }),
+            SizedBox(
+              height: 5.5,
+              width: 3.3,
+            ),
+            GestureDetector(
+              onLongPress: () {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (context) {
+                  return forthtest();
+                }));
+              },
+              onTap: () {
+                setState(() {
+                  result =
+                      v1 + v2 + v3 + v4 + v5 + v6 + v7 + v8 + v9 + v10 / 10;
+                  if (result >= 5) {
+                    name = "انفعالي😈";
+                  }
+                  name = "🥰غير انفعالي";
+                  print(TimeOfDay.fromDateTime(DateTime.now()));
+
+                  print(name);
+                });
+              },
+              child: Container(
+                height: 100,
+                width: double.infinity,
+                color: Colors.orangeAccent,
+                child: Center(
+                    child: Text(
+                      "${name}",
+                      style: TextStyle(fontSize: 22),
+                    )),
+              ),
+            )
+          ],
+        ),
+      ]),

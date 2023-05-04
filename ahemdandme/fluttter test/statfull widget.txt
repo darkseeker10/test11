@@ -1,0 +1,14 @@
+class Test extends StatefulWidget {
+  State <StatefulWidget> createState(){
+    return TestState();
+  }
+}
+
+class TestState extends State<Test>{
+  Widget build(BuildContext context){
+    return Scaffold(
+      appBar: AppBar(),
+      drawer: Drawer(),
+    );
+  }
+}

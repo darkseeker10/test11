@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="test">
+
+    number1:<input type="text" name="number1" value=" ">
+    <br>
+    result:<input type="text" name="result" value=" ">
+    </form>
+
+    <button onclick="add()"> push</button>
+    
+    <script>
+
+        n1 = document.test.number1;
+        res = document.test.result;
+
+        function add(){
+          var  num1= parseInt(n1.value);
+            res.value=Math.cos(num1);
+        }
+
+
+    </script>
+
+
+    
+</body>
+</html>

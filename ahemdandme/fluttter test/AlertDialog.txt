@@ -1,0 +1,50 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/widgets.dart';
+import 'package:flutter/material.dart';
+
+class Test extends StatefulWidget {
+  State<StatefulWidget> createState() {
+    return TestState();
+  }
+}
+
+class TestState extends State<Test> {
+  String count = "";
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(),
+      drawer: Drawer(),
+      body: Center(
+        child: RaisedButton(
+          color: Colors.green,
+          onPressed: () {
+          showDialog(context: context, builder: (context) {
+            return AlertDialog(
+              actions: [
+                FlatButton(onPressed: (){
+                  print("thhis is liffe to see whwat u wantt ");
+                }, child: Text("uuu"),),
+              ],
+              titlePadding:EdgeInsets.all(50.0) ,
+              backgroundColor: Colors.lightBlue,
+              buttonPadding: EdgeInsets.symmetric(horizontal: 55.5),
+
+              title: Text("how are u sir"),
+              content: Text("how are u telll me what is more u need "),
+            );
+          });
+        },
+          child: Text("buttons push"),
+
+
+        ),
+      ),
+
+    );
+  }
+}
+
+
+

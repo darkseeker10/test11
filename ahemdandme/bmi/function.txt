@@ -1,0 +1,39 @@
+import 'dart:math';
+
+class Countt {
+  var number;
+
+  double calculateBMI(double height, int weight) {
+    height = height / 100;
+    double result = weight / pow(height, 2);
+    number = result;
+    return result;
+  }
+
+  daata() {
+    if (  number < 18.5) {
+      return "  thin//ضعيف";
+    }
+    if (number > 18.6 && number < 24.9){
+      return " healthey//قبانو الي محافض على صحتو";
+    }
+    if ( number < 25 && number >=29.9){
+      return "overweight// دبدوب";
+    }
+    if(number > 30){
+      return "obese// من فصيلة الدببة";
+    }
+
+
+    bool color() {
+      if (number > 10 && number < 40)
+        return true;
+      return false;
+    }
+  }
+}
+
+
+
+
+

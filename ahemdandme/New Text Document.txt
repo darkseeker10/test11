@@ -1,0 +1,78 @@
+import 'package:flutter/material.dart';
+
+void main() => runApp(app());
+
+class app extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: "mustafa application",
+      home: Scaffold(
+        appBar: AppBar(
+          title: Center(
+            child: Text("mustafaa application"),
+          ),
+          backgroundColor: Colors.lightGreen,
+        ),
+        body: 
+        Column(
+          children: [
+            Center(
+                child: Text(
+              "welcome to my new website",
+              style: TextStyle(
+                  fontSize: 26,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.deepOrange),
+            )),
+            Text(
+              "welcome to  see my life as  i want u to com",
+              style: TextStyle(
+                backgroundColor: Colors.orange,
+                color: Colors.orangeAccent,
+                fontSize: 23,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            RaisedButton(
+              child: Text(
+                'Connect',
+                style: TextStyle(fontSize: 23, color: Colors.lightGreen),
+              ),
+              onPressed: () {},
+            ),
+          ],
+        ),
+
+      ),
+    );
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

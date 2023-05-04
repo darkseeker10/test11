@@ -1,0 +1,22 @@
+   child: DropdownButton(
+                icon: Icon(Icons.one_k_plus_outlined),
+                isDense:true,
+
+                hint: Text("hello"),
+                items: ["ayosh", "jojo" , "elaph"].map((e) => DropdownMenuItem(child: Text("$e",style: TextStyle(color: Colors.black45),), value:e,))
+    .toList(),
+        onChanged:(val){
+                  print("$val");
+                  setState(() {
+                    selectedcount = "$val";
+                  });
+    },
+    value: selectedcount,
+
+              ),
+            ),
+          ),
+        ),
+    );
+  }
+}

@@ -1,0 +1,48 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/widgets.dart';
+import 'package:flutter/material.dart';
+
+class Test extends StatefulWidget {
+  State<StatefulWidget> createState() {
+    return TestState();
+  }
+}
+
+class TestState extends State<Test> {
+  String count = "";
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(),
+      drawer: Drawer(),
+      body: Container(
+        child: ListView(
+          //here the صفات الويجيد
+          scrollDirection:Axis.horizontal,
+          children: [
+            Container(
+              height: 100.0,
+              color: Colors.lightBlueAccent,
+            ),
+            Container(
+              height: 500.0,
+              color: Colors.teal,
+            ),
+
+            Container(
+              height: 700.0,
+              color: Colors.teal,
+            ),
+            Container(
+              height: 700.0,
+              color: Colors.pink,
+            ),
+          ],
+        ),
+      ),
+
+    );
+  }
+}
+

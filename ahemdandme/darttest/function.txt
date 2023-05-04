@@ -1,0 +1,28 @@
+void main(){
+  
+myFunction();
+ 
+  
+}
+
+
+
+myFunction(){
+  var name ="mustafa";
+ 
+  
+        if(name.startsWith("2."))
+        {
+               print("mustafa");
+                 myFullname();
+ 
+  }else{
+          print("ww");
+        }
+
+
+}
+
+myFullname(){
+  print("mustafa nafi jasdseem");
+}

@@ -1,0 +1,93 @@
+r
+
+
+import 'package:flutter/material.dart';
+
+void main() => runApp(app());
+
+class app extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title:Center(child:Text("mustafa  applicatipn"),),
+          backgroundColor: Colors.lightGreenAccent,
+        ),
+        backgroundColor: Colors.amber,
+        body: SafeArea(
+
+          child: Row(
+            verticalDirection: VerticalDirection.up,
+            crossAxisAlignment: CrossAxisAlignment.end,
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+
+            children: [
+
+              Container(
+                width: 100.0,
+                height: 100.0,
+                padding: EdgeInsets.all(20),
+                margin: EdgeInsets.symmetric(horizontal: 10, vertical: 20),
+                child: Text("nafi"),
+                color: Colors.white54,
+              ),
+
+              Container(
+                width: 100.0,
+                height: 100.0,
+                padding: EdgeInsets.all(20),
+                margin: EdgeInsets.symmetric(horizontal: 10, vertical: 20),
+                child: Text("mustafa2"),
+                color: Colors.white54,
+              ),
+
+              Container(
+                width: 100.0,
+                height: 100.0,
+                padding: EdgeInsets.all(20),
+                margin: EdgeInsets.symmetric(horizontal: 10, vertical: 20),
+                child: Text("mustafa "),
+                color: Colors.white54,
+              ),],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+
+import 'package:flutter/material.dart';
+
+void main() => runApp(app());
+
+class app extends StatelessWidget {
+  const app({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: "mustafa applicatiion",
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("mustafa application"),
+        ),
+        body: Column(
+          children: [
+            TextField(
+              decoration: InputDecoration(
+                hintText: "ayosha",
+                labelText: "mustafa",
+                labelStyle: TextStyle(
+                  fontSize: 15,
+                  color: Colors.purpleAccent
+                ),
+              ),
+            )
+          ],
+        ),
+      ),
+    );
+  }
+}

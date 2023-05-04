@@ -1,0 +1,29 @@
+import 'package:flutter/material.dart';
+import 'package:untitled12/tow.dart';
+
+class  three extends StatelessWidget {
+
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text("this is the third page"),),
+      body: Column(
+        children: [
+          Container(
+            color: Colors.brown,
+            height: 200,
+            width: 200,
+          ),
+          RaisedButton(onPressed: (){
+            Navigator.of(context).pop(MaterialPageRoute(builder: (context) {
+              return tow();
+            },
+            ));},
+            child: Text("goback step"),
+          ),
+        ],
+      ),
+    );
+  }
+}

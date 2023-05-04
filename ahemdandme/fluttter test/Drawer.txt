@@ -1,0 +1,70 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/widgets.dart';
+import 'package:flutter/material.dart';
+
+class Test extends StatefulWidget {
+  State<StatefulWidget> createState() {
+    return TestState();
+  }
+}
+
+class TestState extends State<Test> {
+  GlobalKey<ScaffoldState> ck = new GlobalKey<ScaffoldState>();
+
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      key: ck,
+      appBar: AppBar(),
+      drawer: Drawer(
+        child: Column(
+          children: [
+            UserAccountsDrawerHeader(
+              arrowColor: Colors.white,
+              accountName: Text("mustafa"),
+              accountEmail: Text("MUSTAFA@Gmail.com"),
+              currentAccountPicture:CircleAvatar(backgroundColor: Colors.orange,child: Text("mu"),)
+            ),
+            Container(
+              color: Colors.pink,
+              child: ListTile(title: Text("homepage"),
+              leading: Icon(Icons.home),
+              onTap: (){},),
+            ),
+
+
+            Container(
+              color: Colors.indigoAccent,
+              child: ListTile(title: Text("help"),
+                leading: Icon(Icons.help),
+                onLongPress: (){},
+                onTap: (){},),
+            ),
+
+
+            ListTile(title: Text("about"),
+              leading: Icon(Icons.account_box_outlined),
+              onTap: (){},),
+
+
+
+
+            ListTile(title: Text("log out"),
+              leading: Icon(Icons.logout),
+              onTap: (){},),
+
+
+            ListTile(title: Text("more info",style: TextStyle(color: Colors.yellow),),
+              leading: Icon(Icons.info), onTap: (){},),
+          ],
+
+        ),
+      ),
+      body:RaisedButton(onPressed: (){
+
+      }, child: Text("press me"),)
+    );
+
+  }
+}

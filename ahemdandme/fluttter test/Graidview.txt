@@ -1,0 +1,52 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/widgets.dart';
+import 'package:flutter/material.dart';
+
+
+class Test extends StatefulWidget {
+  State<StatefulWidget> createState() {
+    return TestState();
+  }
+}
+
+class TestState extends State<Test> {
+  List mu = [" thaia", " moon" , "sun"];
+  List mn = [1, 2];
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(),
+      drawer: Drawer(),
+      body: Container(
+        child: GridView(
+          gridDelegate: (SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,crossAxisSpacing: 10, mainAxisSpacing: 10)),
+          children: [
+            Container(
+              color: Colors.black87,
+              child: Text("this is my new life to"),
+            ),
+            Container(
+
+              color: Colors.red,
+              child: Text("this is my new life to"),
+            ),
+            Container(
+              color: Colors.yellow,
+              child: Text("this is my new life to"),
+            ),
+            Container(
+              color: Colors.pink,
+              child: Text("this is my new life to"),
+            ),
+          ],
+        ),
+      )
+
+
+
+
+    );
+  }
+}
+

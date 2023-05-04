@@ -1,0 +1,66 @@
+
+
+import 'package:flutter/material.dart';
+
+void main() => runApp(app());
+
+class app extends StatelessWidget {
+  const app({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: "mustafa applicatiion",
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("mustafa application"),
+        ),
+        body: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.start,
+
+          children: [
+
+
+            Container(
+              height: 100,
+              width: 400,
+              color: Colors.lightGreen,
+              margin: EdgeInsets.all(70.0),
+              padding: EdgeInsets.all(20),
+              child: TextField(
+                decoration: InputDecoration(
+
+                  hintText: "www.mustafa.com",
+                  labelText: "mustafa",
+
+                  labelStyle: TextStyle(
+                      fontSize: 23,
+                      color: Colors.amberAccent
+                  ),
+                ),
+              ),
+            ),
+            Container(
+              height: 100,
+              width: 400,
+              color: Colors.lightGreen,
+              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 0.0),
+              padding: EdgeInsets.symmetric(vertical: 50, horizontal: 50),
+              child: TextField(
+                decoration: InputDecoration(
+                  hintText: "password",
+                  labelText: "enter ur  password ",
+                  hintStyle: TextStyle(
+                    color: Colors.orange,
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}

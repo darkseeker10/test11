@@ -1,0 +1,32 @@
+void main(){
+  
+ print(caculator(2)) ;
+  
+  print(myfull("mustafa", 22));
+}
+
+
+
+int caculator(x){
+  
+  var result = x +4;
+  
+  if(result == 6){
+    print("test");
+    
+    print(myFullname("mustafa"));
+  }
+  
+ return result;
+}
+
+
+String myFullname(name){
+  
+  return "hello my friend  ${name}";
+}
+
+
+
+String myfull(name , age) => "my nameis ${name} and  my  age is ${age}";
+  

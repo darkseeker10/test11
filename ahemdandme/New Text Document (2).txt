@@ -1,0 +1,44 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+string  str ="5678";
+
+
+int number =stoi(str);
+cout<<number<<endl;
+
+number = number/100;
+
+number +=4;
+cout<<number<<endl;
+
+
+
+
+    return 0;
+}
+
+***********************************
+
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int sum ;
+    int n =5;
+
+    for (int i =1 ; i<n ;i++)
+        {
+
+            sum  +=i*i;
+
+
+
+    }
+    cout<<sum<<endl;
+    return 0 ;
+}

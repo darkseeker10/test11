@@ -1,0 +1,19 @@
+void main(){
+  
+  print(mySlary());
+  
+  var add =200;
+  
+  var result = add + mySlary();
+  
+  print("the result after the chage${result}");
+  
+}
+
+//the function 
+
+int mySlary(){
+  return 100;
+}
+
+//we can use the int and string and bool too to make any type of the functions

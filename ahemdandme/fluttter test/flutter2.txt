@@ -1,0 +1,74 @@
+
+
+import 'package:flutter/material.dart';
+
+void main() => runApp(app());
+
+class app extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title:Center(child:Text("mustafa  applicatipn"),),
+          backgroundColor: Colors.lightGreenAccent,
+        ),
+        backgroundColor: Colors.amber,
+        body: SafeArea(
+
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+
+            children: [
+
+
+              Container(
+                margin: EdgeInsets.all(5),
+                padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.8),
+                child: Center(
+                  child: CircleAvatar(
+
+                    radius: 50,
+                    backgroundImage: AssetImage("pip/lo.jpg"),
+                    child: Text("mustafa nafi"),
+                  ),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.symmetric(horizontal: 10,vertical: 10),
+                padding: EdgeInsets.all(10),
+                child: Text("mustafa programmmer ",
+                  style: TextStyle(
+                    color: Colors.lightGreenAccent,
+                    fontSize: 34,
+                    fontWeight: FontWeight.bold
+                  ),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.symmetric(vertical: 120, horizontal: 0),
+                child: Text("welcome to our website",
+                  style: TextStyle(
+                    fontSize: 40,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.deepOrange
+                  ) ,
+
+                ),
+
+              ),
+
+
+          ]
+    ),
+
+        ),
+    ),
+    );
+
+
+
+
+
+  }
+}

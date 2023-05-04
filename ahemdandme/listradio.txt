@@ -1,0 +1,110 @@
+   Column(
+            children: [
+              Container(
+                width: double.infinity,
+                  height: 30,
+                  color: Colors.yellow,
+                  child: Center(child: Text("اسئلة الاختبار"))),
+              Row(
+                children: [
+                  Text("هل تفضل الانسان والاطفال"),
+                  Radio(
+                    hoverColor:Colors.red,
+
+                      value: "iraq",
+                      groupValue: Country,
+                      onChanged: (V) {
+                        setState(() {
+                          print(Country);
+                          Country = V;
+                        });
+                      }),
+                ],
+              ),
+              Row(
+                children: [
+                  Text("الطبيعة الاماكن المفتوحق"),
+                  Radio(
+                      hoverColor:Colors.red,
+                      value: "ir",
+                      groupValue: Country,
+                      onChanged: (V) {
+                        setState(() {
+                          Country = V;
+                          print(Country);
+                        });
+                      }),
+                ],
+              ),
+              Row(
+                children: [
+                  Text("الجلوس منفردا"),
+                  Radio(
+                      hoverColor:Colors.red,
+                      value: 90,
+                      groupValue: Country,
+                      onChanged: (V) {
+
+                        setState(() {
+
+                          Country = V;
+
+                        });
+                      }),
+                ],
+              ),
+              Row(
+                children: [
+                  Text("هل تفضل الانسان والاطفال"),
+                  Radio(
+                      hoverColor:Colors.red,
+
+                      value: "iraq",
+                      groupValue: Country,
+                      onChanged: (V) {
+                        setState(() {
+                          print(Country);
+                          Country = V;
+                        });
+                      }),
+                ],
+              ),
+              Row(
+                children: [
+                  Text("الطبيعة الاماكن المفتوحق"),
+                  Radio(
+                      hoverColor:Colors.red,
+                      value: "ir",
+                      groupValue: Country,
+                      onChanged: (V) {
+                        setState(() {
+                          Country = V;
+                          print(Country);
+                        });
+                      }),
+                ],
+              ),
+              Row(
+                children: [
+                  Text("الجلوس منفردا"),
+                  Radio(
+                      hoverColor:Colors.red,
+                      value: 90,
+                      groupValue: Country,
+                      onChanged: (V) {
+
+                        setState(() {
+
+                          Country = V;
+
+                        });
+                      }),
+                ],
+              ),
+            ],
+          ),
+        ]),
+      ),
+    );
+  }
+}
